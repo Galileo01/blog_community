@@ -1,0 +1,83 @@
+.posts-list {
+  .list-title {
+      text-align: center;
+      color: rgba(0, 0, 0, 0.85);
+  }
+  .post-item {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      text-align: left;
+      .item-header{
+          display: flex;
+          justify-content: space-between;
+          .left .username::after{
+              content: '';
+              display: inline-block;
+              width: 1px;
+              height:  14px;
+             background: #e5e6eb;
+             margin: 0 8px;
+          }
+          .left .username{
+              color:black;
+          }
+      }
+      .item-title {
+          font-size: 1.3rem;
+          color: #1e90ff;
+          padding: 0 0.5rem;
+          .jin {
+              visibility: hidden;
+          }
+      }
+      .item-title:hover {
+          a {
+              text-decoration: underline;
+          }
+          .jin {
+              visibility: visible;
+          }
+      }
+      .item-desc {
+          color:  #777;
+          padding: 0.5rem;
+      }
+      .small {
+          color: #aaa;
+          font-size: 0.8rem;
+      }
+      .bottom {
+          display: flex;
+          .number-item{
+              margin-right: 5px;
+              .number{
+                margin-left: 5px;
+            }
+          }
+          
+      }
+
+      .item-icon {
+          padding: 0.5rem 0;
+          cursor: pointer;
+      }
+      .item-icon span {
+          display: inline-block;
+          padding: 0 10px;
+      }
+      .ant-tag {
+          cursor: pointer;
+      }
+      > div {
+          padding: 0.2rem 0;
+      }
+  }
+  .post-item:hover{
+    background: #fafafa;
+}
+  .post-item:last-of-type {
+      margin-bottom: 0px;
+  }
+}
